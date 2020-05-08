@@ -3,7 +3,7 @@ d = 4;
 module w(len=4,x=1,y=3,r=0,col="Red"){
   
   s = (len == 1)?2:0;
-  translate([d*x,d*y-2*d,7.5])
+  translate([d*x,d*y-2*d,6])
   rotate([0,0,-90*r]) 
   translate([0,d*len/2-s,0]){
   
