@@ -1,7 +1,8 @@
 use<3D/breadboard.scad>
 use<3D/r.scad>
 use<3D/c.scad>
-use<3D/wire.scad>
+use<3D/ec.scad>
+use<3D/w.scad>
 
 breadboard();
 
@@ -17,3 +18,4 @@ w(x=9,y=11,len=15,r=1,col="Black");
 c(x=10, len=4);
 c(x=10,y=8,len=8,r=1);
 c(x=10,y=9,len=1,r=1);
+ec(y=16,r=1);
