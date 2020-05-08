@@ -1,6 +1,6 @@
 d = 4;
 
-module c(c=104, len=4,x=1,y=3,r=0){
+module c(c="104", len=4,x=1,y=3,r=0){
 
   s = (len == 1)?2:0;
   translate([d*x,d*y-2*d,5.5])
@@ -16,7 +16,11 @@ module c(c=104, len=4,x=1,y=3,r=0){
     translate([0,0,d])
     scale([.4,1,1])
     sphere(r=5, $fn=64);
-
+    color("SaddleBrown")
+    translate([1.7,-3,3])
+    rotate([90,0,90])
+    linear_extrude(0.3)
+    #text(c,2.5);
   }
   color([.8,.8,.8]){
     translate([0,-.02,3])
@@ -33,7 +37,11 @@ module c(c=104, len=4,x=1,y=3,r=0){
     translate([0,0,2*d])
     scale([.4,1,1])
     sphere(r=5, $fn=64);
-
+    color("SaddleBrown")
+    translate([1.7,-2.7,7])
+    rotate([90,0,90])
+    linear_extrude(0.3)
+    #text(c,2.5);
   }
     //draht
   color([.8,.8,.8]){
@@ -81,14 +89,14 @@ module c(c=104, len=4,x=1,y=3,r=0){
 
 c();
 translate([d,0,0])
-c(104,5);
+c("104",5);
 translate([8,0,0])
-c(123,6);
+c("123",6);
 translate([16,0,0])
-c(777,10, r=1);
+c("777",10, r=1);
 
 translate([-4,0,0])
-c(103,1);
+c("103",1);
 translate([-4,1.45,4.5])
 #cube([1,4,1], center=true);
 

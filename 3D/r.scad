@@ -6,7 +6,7 @@ module r(a=1,b=0,p=1, len=4,x=1,y=3,r=0){
   c2 = colors[b];
   c3 = colors[p];
   s = (len == 1)?2:0;
-  translate([d*x,d*y-2*d,7.5])
+  translate([d*x,d*y-2*d,7])
   rotate([0,0,-90*r]) 
   translate([0,d*len/2-s,0]){
   
