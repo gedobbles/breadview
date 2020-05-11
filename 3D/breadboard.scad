@@ -27,9 +27,9 @@ difference(){
         stoepsel();
         translate([0,d,0])
         stoepsel();
-        translate([0,w-1-2*d,0])
+        translate([0,w-2*d,0])
         stoepsel();
-        translate([0,w-1-3*d,0])
+        translate([0,w-3*d,0])
         stoepsel();
       }
     }
