@@ -62,7 +62,7 @@ module dip(t1="",t2="MCP6002",t3="",len=4,x=1,r=0){
         ],5);
       }
     }//end pins
-    color("White"){
+    color("#dddddd"){
     translate([2,2*d,d-.29])
     linear_extrude(0.3)
     text(t1,2.5);
