@@ -1,11 +1,4 @@
-use<3D/breadboard.scad>
-use<3D/r.scad>
-use<3D/c.scad>
-use<3D/ec.scad>
-use<3D/w.scad>
-use<3D/dip.scad>
-
-breadboard();
+include<breadview.scad>
 
 //Params für r: a,b,p=wert, len=breite der Drähte, x=xpos, y=ypos, r=Drehung
 r(x=3,r=0); //100 (default)
