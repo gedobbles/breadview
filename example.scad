@@ -3,6 +3,7 @@ use<3D/r.scad>
 use<3D/c.scad>
 use<3D/ec.scad>
 use<3D/w.scad>
+use<3D/dip.scad>
 
 breadboard();
 
@@ -19,3 +20,5 @@ c(x=10, len=4);
 c(x=10,y=8,len=8,r=1);
 c(x=10,y=9,len=1,r=1);
 ec(y=16,r=1);
+
+dip(x=30,len=4);

@@ -1,15 +1,15 @@
 d = 4;
 module breadboard(){
 l = 63*d;
-w = 80;
+w = 21*d;
 h = 5;
 color("White")
 difference(){
   //main body
   cube([l,w,h]);
   //mittlere rille
-  translate([-1,39.5,h-1])
-    cube([l+2,1,2]);
+  translate([-1,10.5*d-2,h-1])
+    cube([l+2,4,2]);
   //äußere rillen
   translate([-1,13.5,h-0.7])
   rotate([45,0,0])
@@ -42,7 +42,7 @@ difference(){
       for(y=[0:4]){
         translate([0,y*d,0])
         stoepsel();
-        translate([0,y*d+6*d,0])
+        translate([0,y*d+7*d,0])
         stoepsel();
       }
     }
