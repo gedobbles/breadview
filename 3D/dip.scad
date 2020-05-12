@@ -1,7 +1,8 @@
 d=4;
 module dip(t1="",t2="MCP6002",t3="",len=4,x=1,r=0){
-  translate([x*d-2,9*d,5.2])
-  rotate([0,0,-90*r]){
+  translate([(x+len/2)*d-2,10.5*d,5.2])
+  rotate([0,0,-90*r])
+    translate([-len*d/2,-1.5*d,0]){
     color("#222222")
     difference(){
       //cube([len*d,2.5*d,d]);
@@ -77,3 +78,4 @@ module dip(t1="",t2="MCP6002",t3="",len=4,x=1,r=0){
 }
 
 dip(t3="1904");
+dip(t3="1904",r=2);

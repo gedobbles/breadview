@@ -20,6 +20,11 @@ module ec(c="100uF", len=4,x=1,y=3,r=0){
     linear_extrude(0.3)
     text(c,2.5);
     color("White")
+    translate([-4.7,-1,10])
+    rotate([90,-90,-90])
+    linear_extrude(0.3)
+    text(c,2.5);
+    color("White")
     translate([0,-.107,d+.1])
     cylinder(19.8,4.9,4.9, $fn=64);
     color("Silver")
@@ -43,6 +48,11 @@ module ec(c="100uF", len=4,x=1,y=3,r=0){
     color("White")
     translate([4.7,1,10])
     rotate([90,-90,90])
+    linear_extrude(0.3)
+    text(c,2.5);
+    color("White")
+    translate([-4.7,-1,10])
+    rotate([90,-90,-90])
     linear_extrude(0.3)
     text(c,2.5);
     color("White")
