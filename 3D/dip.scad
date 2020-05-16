@@ -8,8 +8,10 @@ module dip(t1="",t2="MCP6002",t3="",len=4,x=1,r=0){
       //cube([len*d,2.5*d,d]);
       translate([0,1,0])
       polyhedron([[0,0,0],[0,-.5,d/2],[0,0,d],[len*d,0,0],[len*d,-.5,d/2],[len*d,0,d],[0,2.5*d,0],[0,2.5*d+.5,d/2],[0,2.5*d,d],[len*d,2.5*d,0],[len*d,2.5*d+.5,d/2],[len*d,2.5*d,d]],[[6,7,8,2,1,0],[0,1,4,3],[1,2,5,4],[3,4,5,11,10,9],[9,10,7,6],[10,11,8,7],[0,3,9,6],[2,8,11,5]],2);
-      translate([0,5,3.5])
+      translate([0,6,3.5])
       cylinder(1.1,1.2,1.2,center=true,$fn=32);
+      translate([2,2,4])
+      cylinder(1,.5,.5,center=true,$fn=32);
     }
     color("Silver")
     for(i=[1:len]){
@@ -78,4 +80,4 @@ module dip(t1="",t2="MCP6002",t3="",len=4,x=1,r=0){
 }
 
 dip(t3="1904");
-dip(t3="1904",r=2);
+//dip(t3="1904",r=2);
