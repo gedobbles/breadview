@@ -1,6 +1,6 @@
 d = 4;
 module breadboard(){
-l = 63*d;
+l = 64*d;
 w = 21*d;
 h = 5;
 color("White")
@@ -37,7 +37,7 @@ difference(){
   
   //innen
   translate([d,5*d,0])
-  for(x=[0:61]){
+  for(x=[0:62]){
     translate([x*d,0,0]){
       for(y=[0:4]){
         translate([0,y*d,0])
